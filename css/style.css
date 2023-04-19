@@ -1,0 +1,29 @@
+/* Global Settings */
+@import './global/global.css';
+@import './global/header.css';
+@import './global/footer.css';
+
+/* Utilities */
+@import './utilidades/componentes.css';
+@import './utilidades/cores.css';
+@import './utilidades/animacao.css';
+@import './utilidades/tipografia.css';
+
+/* Home */
+@import './home/intro.css';
+@import './home/about.css';
+@import './home/laboratorio.css';
+@import './home/parceiros.css';
+@import './home/fomentos.css';
+@import './home/galeria.css';
+
+/* Historia e Missao */
+@import './historia-e-missao/historia.css';
+@import './historia-e-missao/missao.css';
+@import './historia-e-missao/form-about.css ';
+
+/* Faq */
+@import './faq/faq.css';
+
+/* Inscricao */
+@import './inscricao/inscricao.css';

@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Adaca | Inscrição</title>
+
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500;600&family=Ubuntu:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/a19e8ee270.js" crossorigin="anonymous"></script>
+
+  <!-- favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="./img/favicon/site.webmanifest">
+
+  <!-- Estilo -->
+  <link rel="stylesheet" href="./css/style.css">
+
+  <!-- Caso JS inativo -->
+  <script>document.documentElement.className += ' js'</script>
+</head>
+
+<body id="inscricao">
+
+  <section class="header-bg" id="intro">
+    <div class="header-bg">
+      <header class="header container">
+        <div class="logo">
+          <a href="../index.html"><img src="./img/Logo-Minimal.png" alt="Logo"></a>
+        </div>
+        <nav>
+          <ul class="navbar js-menu font-2-xl cor-c1">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="#inscricao">Formulário</a></li>
+            <li></li>
+          </ul>
+        </nav>
+        <a class="botao-header font-2-xl" href="./index.html">Home</a>
+      </header>
+    </div>
+  </section>
+
+  <main class="inscricao-bg" id="inscricao">
+    <form method="post" class="inscricao container" action="recebe.php">
+      <h1 class="font-1-xxl cor-c11">Formulário de inscrição</h1>
+      <section class="form form-crianca">
+        <h2 class="font-1-xl cor-c9 span-2">Informações da Criança</h2>
+        <div>
+          <label class="font-2-xl cor-c10" for="nome-crianca">Nome:</label>
+          <input type="text" id="nome-crianca" name='nome-crianca' placeholder="Seu nome">
+        </div>
+        <div>
+          <label class="font-2-xl cor-c10">Sexo:</label>
+          <input type="radio" name="sexo-crianca" id="sexo-crianca">
+          <span class="font-2-xl cor-c8">M</span>
+          <input type="radio" name="sexo-crianca" id="sexo-crianca">
+          <span class="font-2-xl cor-c8">F</span>
+        </div>
+        <div>
+          <label class="font-2-xl cor-c10" for="classificacao">Classificação:</label>
+          <input type="text" id="classificacao" name='classificacao' placeholder="Sua classificação">
+        </div>
+        <div>
+          <label class="font-2-xl cor-c10" for="data">Data de Nascimento:</label>
+          <input type="text" id="data" name='data' placeholder="dd/mm/aa">
+        </div>
+        <div>
+          <label class="font-2-xl cor-c10">Encontra-se em escola regular?</label>
+          <input type="radio" name="escola" id="escola">
+          <span class="font-2-xl cor-c8">Sim</span>
+          <input type="radio" name="escola" id="escola">
+          <span class="font-2-xl cor-c8">Não</span>
+        </div>
+        <div>
+          <label class="font-2-xl cor-c10">Sabe ler?</label>
+          <input type="radio" name="leitura" id="leitura">
+          <span class="font-2-xl cor-c8">Sim</span>
+          <input type="radio" name="leitura" id="leitura">
+          <span class="font-2-xl cor-c8">Não</span>
+        </div>
+        <div>
+          <label class="font-2-xl cor-c10">Sabe escrever?</label>
+          <input type="radio" name="escrita" id="escrita">
+          <span class="font-2-xl cor-c8">Sim</span>
+          <input type="radio" name="escrita" id="escrita">
+          <span class="font-2-xl cor-c8">Não</span>
+        </div>
+        <div>
+          <label class="font-2-xl cor-c10">Utiliza mediador no dia a dia?</label>
+          <input type="radio" name="mediador" id="mediador">
+          <span class="font-2-xl cor-c8">Sim</span>
+          <input type="radio" name="mediador" id="mediador">
+          <span class="font-2-xl cor-c8">Não</span>
+        </div>
+        <div>
+          <label class="font-2-xl cor-c10" for="brinquedo">Quais são suas preferências de:</label>
+          <label class="font-2-xl cor-c8" for="brinquedo">Brinquedos</label>
+          <input type="text" id="brinquedo" name='brinquedo' placeholder="Quebra cabeça">
+          <label class="font-2-xl cor-c8" for="alimento">Alimentos</label>
+          <input type="text" id="alimento" name='alimento' placeholder="Panqueca">
+          <label class="font-2-xl cor-c8" for="bebida">Bebidas</label>
+          <input type="text" id="bebida" name='bebida' placeholder="Limonada">
+          <label class="font-2-xl cor-c8" for="atividade">Atividades</label>
+          <input type="text" id="atividade" name='atividade' placeholder="Brincar">
+        </div>
+        <div>
+          <label class="font-2-xl cor-c10">Utiliza medicamentos?</label>
+          <input type="radio" name="medicamento" id="medicamento">
+          <span class="font-2-xl cor-c8">Sim</span>
+          <input type="radio" name="medicamento" id="medicamento">
+          <span class="font-2-xl cor-c8">Não</span>
+        </div>
+        <div class="comunicacao">
+          <label class="font-2-xl cor-c10">Como se comunica?</label>
+          <input type="checkbox" name="comunicacao" id="comunicacao">
+          <span class="font-2-xl cor-c8">Fala</span>
+          <input type="checkbox" name="comunicacao" id="comunicacao">
+          <span class="font-2-xl cor-c8">Gestos</span>
+          <input type="checkbox" name="comunicacao" id="comunicacao">
+          <span class="font-2-xl cor-c8">Ecolalia</span>
+          <input type="checkbox" name="comunicacao" id="comunicacao">
+          <span class="font-2-xl cor-c8">Materiais de suporte</span>
+          <input type="checkbox" name="comunicacao" id="comunicacao">
+          <span class="font-2-xl cor-c8">Outros</span>
+          <label class="font-2-xl cor-c10" for="comunicacao-text">Caso outros, quais?</label>
+          <textarea name="comunicao-text" id="comunicacao-text" rows="5"></textarea>
+        </div>
+        <div>
+          <label class="font-2-xl cor-c10">Possui algum medo significativo? (Som, formas, animal)</label>
+          <input type="radio" name="medo" id="medo">
+          <span class="font-2-xl cor-c8">Sim</span>
+          <input type="radio" name="medo" id="medo">
+          <span class="font-2-xl cor-c8">Não</span>
+        </div>
+        <div>
+          <label class="font-2-xl cor-c10">Hoje faz algum tipo de terapia ou atividade voltada para o tratamento de autismo?</label>
+          <input type="checkbox" name="tratamento" id="tratamento">
+          <span class="font-2-xl cor-c8">Sim</span>
+          <input type="checkbox" name="tratamento" id="tratamento">
+          <span class="font-2-xl cor-c8">Não</span>
+          <label class="font-2-xl cor-c10" for="tratamento-metodo">Se sim, qual?</label>
+          <input type="text" id="tratamento-metodo" name='tratamento-metodo' placeholder="Terapia ocupacional">
+        </div>
+        <div>
+          <label class="font-2-xl cor-c10" for="observacao">Observação:</label>
+          <textarea name="observacao" id="observacao" rows="5"></textarea>
+        </div>
+        <h3 class="font-1-l cor-c9 span-2">Avaliação de percepção da motricidade global (fina e ampla)</h3>
+        <div>
+          <label class="font-2-xl cor-c10" for="massa-de-modelar">Trabalha com massa de modelar?</label>
+          <input type="radio" name="massa-de-modelar" id="massa-de-modelar">
+          <span class="font-2-xl cor-c8">Sim</span>
+          <input type="radio" name="massa-de-modelar" id="massa-de-modelar">
+          <span class="font-2-xl cor-c8">Não</span>
+        </div>
+        <div>
+          <label class="font-2-xl cor-c10" for="tesoura">Manipula tesoura? (sem ponta)</label>
+          <input type="radio" name="tesoura" id="tesoura">
+          <span class="font-2-xl cor-c8">Sim</span>
+          <input type="radio" name="tesoura" id="tesoura">
+          <span class="font-2-xl cor-c8">Não</span>
+        </div>
+        <div>
+          <label class="font-2-xl cor-c10" for="partes-do-corpo">Identifica partes do corpo?</label>
+          <input type="radio" name="partes-do-corpo" id="partes-do-corpo">
+          <span class="font-2-xl cor-c8">Sim</span>
+          <input type="radio" name="partes-do-corpo" id="partes-do-corpo">
+          <span class="font-2-xl cor-c8">Não</span>
+        </div>
+        <div>
+          <label class="font-2-xl cor-c10" for="ultrapassa-obstaculos">Ultrapassa obstáculos?</label>
+          <input type="radio" name="ultrapassa-obstaculos" id="ultrapassa-obstaculos">
+          <span class="font-2-xl cor-c8">Sim</span>
+          <input type="radio" name="ultrapassa-obstaculos" id="ultrapassa-obstaculos">
+          <span class="font-2-xl cor-c8">Não</span>
+        </div>
+        <div>
+          <label class="font-2-xl cor-c10" for="sobre-desce-escada">Sobe e desce escada?</label>
+          <input type="radio" name="sobre-desce-escada" id="sobre-desce-escada">
+          <span class="font-2-xl cor-c8">Sim</span>
+          <input type="radio" name="sobre-desce-escada" id="sobre-desce-escada">
+          <span class="font-2-xl cor-c8">Não</span>
+        </div>
+        <div>
+          <label class="font-2-xl cor-c10" for="abrir-garrafa">Consegue abrir e fechar garrafa com tampa de rosca?</label>
+          <input type="radio" name="abrir-garrafa" id="abrir-garrafa">
+          <span class="font-2-xl cor-c8">Sim</span>
+          <input type="radio" name="abrir-garrafa" id="abrir-garrafa">
+          <span class="font-2-xl cor-c8">Não</span>
+        </div>
+        <div>
+          <label class="font-2-xl cor-c10" for="objetos-formato">Encaixa objetos em buracos do mesmo formato?</label>
+          <input type="radio" name="objetos-formato" id="objetos-formato">
+          <span class="font-2-xl cor-c8">Sim</span>
+          <input type="radio" name="objetos-formato" id="objetos-formato">
+          <span class="font-2-xl cor-c8">Não</span>
+        </div>
+        <div>
+          <label class="font-2-xl cor-c10" for="chutar">Consegue chutar?</label>
+          <input type="radio" name="chutar" id="chutar">
+          <span class="font-2-xl cor-c8">Sim</span>
+          <input type="radio" name="chutar" id="chutar">
+          <span class="font-2-xl cor-c8">Não</span>
+        </div>
+        <div>
+          <label class="font-2-xl cor-c10" for="correr">Consegue correr?</label>
+          <input type="radio" name="correr" id="correr">
+          <span class="font-2-xl cor-c8">Sim</span>
+          <input type="radio" name="correr" id="correr">
+          <span class="font-2-xl cor-c8">Não</span>
+        </div>
+      </section>
+
+      <section class="form form-responsavel">
+        <h2 class="font-1-xl cor-c9 span-2">Informações do responsável</h2>
+        <div>
+          <label class="font-2-xl cor-c10" for="nome-responsavel">Nome:</label>
+          <input type="text" name="nome-responsavel" id="nome-responsavel" placeholder="Seu nome">
+        </div>
+        <div>
+          <label class="font-2-xl cor-c10" for="cpf">CPF:</label>
+          <input type="text" name="cpf" id="cpf" pattern="[0-9]" placeholder="000-000-000-00">
+        </div>
+        <div>
+          <label class="font-2-xl cor-c10">Sexo:</label>
+          <input type="radio" name="sexo-responsavel" id="sexo-responsavel">
+          <span class="font-2-xl cor-c8">M</span>
+          <input type="radio" name="sexo-responsavel" id="sexo-responsavel">
+          <span class="font-2-xl cor-c8">F</span>
+        </div>
+        <div>
+          <label class="font-2-xl cor-c10" for="telefone">Telefone:</label>
+          <input type="text" name="telefone" id="telefone" placeholder="(24) 9 3333-3333">
+        </div>
+        <div>
+          <label class="font-2-xl cor-c10" for="celular">Celular:</label>
+          <input type="text" name="celular" id="celular" placeholder="(24) 9 9999-9999">
+        </div>
+        <div>
+          <label class="font-2-xl cor-c10" for="email">Email:</label>
+          <input type="email" name="email" id="email" placeholder="contato@email.com">
+        </div>
+        <div>
+          <label class="font-2-xl cor-c10" for="endereco">Endereço completo:</label>
+          <input type="text" name="endereco" id="endereco" placeholder="Rua Logo Ali, 306, Bairro Pitanga do Sul">
+        </div>
+        <div>
+          <label class="font-2-xl cor-c10" for="cep">CEP:</label>
+          <input type="text" name="cep" id="cep" placeholder="27213-145">
+        </div>
+      </section>
+
+      <section class="form form-medicamento">
+        <h2 class="font-1-xl cor-c9 span-2">Informações do medicamento</h2>
+        <div>
+          <label class="font-2-xl cor-c10" for="nome-remedio">Nome:</label>
+          <input type="text" name="nome-remedio" id="nome-remedio" placeholder="Ritalina">
+        </div>
+        <div>
+          <label class="font-2-xl cor-c10" for="laboratorio">Laboratório:</label>
+          <input type="text" name="laboratorio" id="laboratorio" placeholder="Hypera Pharma">
+        </div>
+        <div>
+          <label class="font-2-xl cor-c10" for="psicologia">Psicologia:</label>
+          <input type="text" name="psicologia" id="psicologia" placeholder="Perguntar">
+        </div>
+      </section>
+    </form>
+  </main>
+
+  <section class="footer-bg">
+    <footer class="footer container">
+      <div class="footer-item">
+        <h2 class="font-1-xl cor-c1">Institucional</h2>
+        <ul>
+          <li><a class="font-2-l-a cor-c8" href="./termos-e-condicoes.html">Termos e condições</a></li>
+        </ul>
+      </div>
+      <div class="footer-item">
+        <h2 class="font-1-xl cor-c1">Perguntas</h2>
+        <ul>
+          <li><a class="font-2-l-a cor-c8" href="./faq.html">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-item">
+        <h2 class="font-1-xl cor-c1">Contato</h2>
+        <div class="tel">
+          <a href="tel:+552430768869" class="font-2-l-a cor-c8">
+            <span><i class="fa-solid fa-phone fa-xl"></i></span>
+            (24) 3076-8869
+          </a>
+        </div>
+        <a href="mailto:" class="font-2-l-a cor-c8">contato@adaca.com</a>
+        <div class="icon-footer">
+          <a href="https://www.facebook.com/adacauff"  class="font-2-l-a cor-c8"><i class="fa-brands fa-facebook fa-2xl"></i></a>
+          <a href="https://www.uff.br/?q=noticias/08-09-2016/uff-de-volta-redonda-cria-ferramentas-digitais-para-criancas-autistas" class="font-2-l-a cor-c8"><i class="fa-solid fa-globe fa-2xl"></i></a>
+        </div>
+      </div>
+      <div class="footer-item">
+        <h2 class="font-1-xl cor-c1">Relacionados</h2>
+        <ul>
+          <li><a href="./index.html" class="font-2-l-a cor-c8">Home</a></li>
+          <li><a href="./historia-e-missao.html" class="font-2-l-a cor-c8">História</a></li>
+        </ul>
+      </div>
+    </footer>
+  </section>
+
+  <script src="./js/main.js"></script>
+  <script src="./js/animacao-faq.js"></script>
+</body>
+
+</html>

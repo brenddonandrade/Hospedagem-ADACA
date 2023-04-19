@@ -1,0 +1,38 @@
+.historia-bg {
+  background: var(--cor-c9);
+}
+
+.historia {
+  padding: 0px 16px 30px 16px;
+}
+
+.historia-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  position: relative;
+}
+
+.historia-text h1 {
+  margin-bottom: 30px;
+}
+.historia-text p {
+  max-width: 60ch;
+  margin-bottom: 20px;
+}
+
+.historia-img {
+  max-width: 270px;
+}
+
+.historia-img {
+  width: 100%;
+}
+
+@media (max-width: 800px) {
+  .historia-content {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

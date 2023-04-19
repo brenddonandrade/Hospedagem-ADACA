@@ -1,0 +1,104 @@
+.form-about-bg {
+  background: var(--cor-c9);
+}
+
+.form-about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0 16px;
+  gap: 30px;
+}
+
+.form-about-content h1,
+.form-about-content p {
+  grid-column: span 2;
+}
+
+.form-about-content h1 {
+  margin-bottom: 30px;
+}
+
+.form-about-content p {
+  display: flex;
+  align-items: center;
+  margin-left: 14px;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.form-about-content p::before {
+  content: '';
+  display: inline-block;
+  width: 4px;
+  height: 100%;
+  background: var(--cor-c11);
+  position: absolute;
+  left: -10px;
+}
+
+.form-about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.form-about label {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.form-about .col-2 {
+  grid-column: span 2;
+}
+
+.form-about input[type='text'],
+.form-about input[type='email'],
+.form-about textarea {
+  font: 400 1rem/1.25 var(--font-2);
+  letter-spacing: 0.5px;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--cor-c3);
+  border-radius: 4px;
+  background: var(--cor-c2);
+}
+
+.form-about input[type='text']:focus,
+.form-about input[type='email']:focus,
+.form-about textarea:focus {
+  outline: none;
+  border-color: var(--cor-p4);
+  background: var(--cor-c1);
+  box-shadow: 0 0 2px #fea;
+}
+
+.form-img {
+  max-width: 470px;
+  justify-self: end;
+}
+
+.form-img img {
+  width: 100%;
+}
+
+@media (max-width: 800px) {
+  .form-about-content {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .form-img {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  .form-about {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .form-about .col-2 {
+    grid-column: inherit;
+  }
+}

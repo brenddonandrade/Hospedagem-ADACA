@@ -1,0 +1,72 @@
+.laboratorio {
+  padding: 60px 16px;
+  background: var(--cor-c2);
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  padding-top: 30px;
+  margin-bottom: 60px;
+  justify-content: space-between;
+}
+
+.lab-img {
+  max-width: 670px;
+}
+
+.lab-img img {
+  width: 100%;
+}
+
+.lab-content {
+  display: flex;
+  align-items: center;
+}
+
+.lab-content + .lab-content {
+  margin-top: 60px;
+}
+
+.lab-text {
+  background: var(--cor-c1);
+  padding: 30px;
+  border-radius: 4px;
+  position: relative;
+  left: -160px;
+}
+
+.lab-text h2 {
+  margin-bottom: 20px;
+}
+
+.lab-text p {
+  max-width: 75ch;
+  margin-bottom: 30px;
+}
+
+.lab-text img {
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+}
+
+@media (max-width: 1000px) {
+  .lab-img {
+    max-width: 100%;
+  }
+  .lab-content {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .lab-text {
+    background: var(--cor-c1);
+    padding: 30px;
+    border-radius: 4px;
+    position: relative;
+    left: 0;
+  }
+  .lab-content > img {
+    display: none;
+  }
+}

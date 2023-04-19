@@ -1,0 +1,37 @@
+.intro {
+  height: calc(100vh - 112px);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro-content {
+  padding: 0 16px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.logo-intro {
+  max-width: 700px;
+  min-width: 300px;
+}
+
+.logo-intro img {
+  width: 100%;
+}
+
+@media (max-width: 800px) {
+  .intro {
+    height: calc(100vh - 190px);
+  }
+}
+
+@media (max-width: 600px){
+  .intro {
+    height: calc(100vh - 250px);
+  }
+}
